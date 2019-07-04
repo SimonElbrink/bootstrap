@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Assignment 3 Bootstrap</title>
+
+    <script src="https://kit.fontawesome.com/7d4fd1b67d.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <!-- CUSTOM CSS NOT USED! -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR + DROPDOWNS -->
+    <nav id="main-nav" class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+        <div class="container">
+            <!-- Figure out how to more the logo from side to middle when little screen! -->
+            <a href="index.html" class="navbar-brand pl-2">
+                <img src="img/Gate-Logo.png" alt="Logo" style="width: 12rem" />
+            </a>
+
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-2">
+                        <a href="#main-header" class="nav-link">Header</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="#carousel" class="nav-link">Carousel</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="#contact-form" class="nav-link">Contact Form</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Link 1</a>
+                            <a href="#" class="dropdown-item">Link 2</a>
+                            <a href="#" class="dropdown-item">Link 3</a>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+
+    <header id="main-header" class="bg-light m-0" style="padding-top: 7rem;">
+        <div class="jumbotron">
+            <div class="text-center">
+                <h1 class="display-4">Welcome</h1>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, quis?</p>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- CAROUSEL -->
+
+    <div id="carousel" class="container" style="padding-top: 7rem;">
+        <div class="row">
+            <div class="col-sm-10 m-auto">
+
+                <div id="slider1" class="carousel slide mb-5" data-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li class="active" data-target="#slider1" data-slide-to="0"></li>
+                            <li data-target="#slider1" data-slide-to="1"></li>
+                            <li data-target="#slider1" data-slide-to="2"></li>
+                            <li data-target="#slider1" data-slide-to="3"></li>
+                        </ol>
+
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="img/DSC_0420.jpg" alt="First Slide">
+                        </div>
+                        <div class="carousel-item ">
+                            <img class="d-block img-fluid" src="img/DSC_0021.jpg" alt="Secound Slide">
+                        </div>
+                        <div class="carousel-item ">
+                            <img class="d-block img-fluid" src="img/DSC_0022.jpg" alt="Third Slide">
+                        </div>
+                        <div class="carousel-item ">
+                            <img class="d-block img-fluid" src="img/DSC_0035.jpg" alt="fourth Slide">
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Controls -->
+
+                <a href="#slider1" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#slider1" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Marketing Area -->
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm">
+                <div class="card">
+                    <div class="card-header bg-danger text-center">
+                        <h4>Marketing Area</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-columns">
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    Apple Company
+                                </div>
+                                <img src="img/apples-close-up-delicious-209339.jpg" alt="Apple" class=" card-img-top">
+                                <div class="card-body">
+                                    <h2 class="card-title">Sale!</h2>
+                                    <p class="card-text"> Only now! Buy Two Get One Extra!</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    Apple Company
+                                </div>
+                                <img src="img/apples-close-up-delicious-209339.jpg" alt="Apple" class=" card-img-top">
+                                <div class="card-body">
+                                    <h2 class="card-title">Sale!</h2>
+                                    <p class="card-text"> Only now! Buy Two Get One Extra!</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    Apple Company
+                                </div>
+                                <img src="img/apples-close-up-delicious-209339.jpg" alt="Apple" class=" card-img-top">
+                                <div class="card-body">
+                                    <h2 class="card-title">Sale!</h2>
+                                    <p class="card-text"> Only now! Buy Two Get One Extra!</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    Apple Company
+                                </div>
+                                <img src="img/apples-close-up-delicious-209339.jpg" alt="Apple" class=" card-img-top">
+                                <div class="card-body">
+                                    <h2 class="card-title">Sale!</h2>
+                                    <p class="card-text"> Only now! Buy Two Get One Extra!</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    Apple Company
+                                </div>
+                                <img src="img/apples-close-up-delicious-209339.jpg" alt="Apple" class=" card-img-top">
+                                <div class="card-body">
+                                    <h2 class="card-title">Sale!</h2>
+                                    <p class="card-text"> Only now! Buy Two Get One Extra!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SIDE-NAV PILLS + CONTENT -->
+
+
+
+    <!-- CONTACT FORM + IMAGE -->
+
+    <!-- FOOTER -->
+
+    <!-- SCRIPTS -->
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+    <!-- CUSTOM SCRIPTS -->
+
+    <!-- SCROLLSPY - SCRIPT -->
+    <script>
+        $('body').scrollspy({ target: '#main-nav' });
+
+        //add smooth scrolling
+        $('#main-nav a').on('click', function (e) {
+            //Check for a hash value
+            if (this.hash !== '') {
+                //prevent default behavior
+                e.preventDefault();
+
+                //Store hash
+                const hash = this.hash;
+
+                //Animate smooth scroll
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function () {
+                    window.location.hash = hash;
+                });
+            }
+        });
+    </script>
+
+    <!-- CAROUSEL - SCRIPT -->
+    <script>
+        $('.carousel').carousel({
+            interval: 6000,
+            keyboard: true,
+            pause: 'hover',
+            wrap: true
+        });
+
+        $('#slider4').on('slide.bs.carousel', function () {
+            console.log('SLIDE!');
+        });
+
+        $('#slider4').on('slid.bs.carousel', function () {
+            console.log('SLID!');
+        });
+    </script>
+
+</body>
+
+</html>
