@@ -9,11 +9,7 @@
 
     <script src="https://kit.fontawesome.com/7d4fd1b67d.js"></script>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-
-    <!-- CUSTOM CSS NOT USED! -->
-    <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
 
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -21,7 +17,7 @@
 <body>
 
     <!-- NAVBAR + DROPDOWNS -->
-    <nav id="main-nav" class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+    <nav id="main-nav" class="navbar navbar-expand-md fixed-top navbar-dark bg-dark p-1">
         <div class="container">
             <!-- Figure out how to more the logo from side to middle when little screen! -->
             <a href="index.html" class="navbar-brand pl-2">
@@ -35,7 +31,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav">
                     <li class="nav-item px-2">
-                        <a href="#main-header" class="nav-link">Header</a>
+                        <a href="#main-header" class="nav-link active">Header</a>
                     </li>
                     <li class="nav-item px-2">
                         <a href="#carousel" class="nav-link">Carousel</a>
@@ -44,14 +40,24 @@
                         <a href="#contact-form" class="nav-link">Contact Form</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                        <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">Link 1</a>
-                            <a href="#" class="dropdown-item">Link 2</a>
-                            <a href="#" class="dropdown-item">Link 3</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Links</a>
 
-                        </div>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://www.google.com/" class="dropdown-item" target="_blank">Google</a>
+                            </li>
+                            <li>
+                                <a href="https://lexicon.udemy.com/bootstrap-4-from-scratch-with-5-projects/"
+                                    class="dropdown-item" target="_blank">Udemy Course</a>
+                            </li>
+                            <li>
+                                <a href="https://www.w3schools.com/bootstrap4/default.asp" class="dropdown-item "
+                                    target="_blank">w3schools</a>
+                            </li>
+                        </ul>
+
                     </li>
+
                 </ul>
             </div>
         </div>
@@ -59,11 +65,11 @@
 
     <!-- HEADER -->
 
-    <header id="main-header" class="bg-light m-0" style="padding-top: 7rem;">
+    <header id="main-header" style="padding-top: 7rem">
         <div class="jumbotron">
             <div class="text-center">
                 <h1 class="display-4">Welcome</h1>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, quis?</p>
+                <p class="lead">This is a Bootstrap Assignment. Made at Lexicon Ab in Växjö Sweden</p>
             </div>
         </div>
 
@@ -71,11 +77,11 @@
 
     <!-- CAROUSEL -->
 
-    <div id="carousel" class="container" style="padding-top: 7rem;">
+    <div id="carousel" class="container" style="padding-top: 7rem">
         <div class="row">
             <div class="col-sm-10 m-auto">
 
-                <div id="slider1" class="carousel slide mb-5" data-ride="carousel">
+                <div id="slider1" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
 
                         <!-- Indicators -->
@@ -101,25 +107,24 @@
 
                     </div>
                 </div>
-
-                <!-- Controls -->
-
-                <a href="#slider1" class="carousel-control-prev" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a href="#slider1" class="carousel-control-next" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
-
-
             </div>
+
+            <!-- Controls -->
+
+            <a href="#slider1" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#slider1" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
         </div>
     </div>
 
     <!-- Marketing Area -->
 
     <Section id="marketingArea">
-        <div class="container">
+        <div class="container" style="padding-top: 7rem">
             <div class="row justify-content-center">
                 <div class="col-sm">
                     <div class="card">
@@ -130,10 +135,9 @@
                             <div class="card-columns">
                                 <div class="card">
                                     <div class="card-header text-center">
-                                        Apple Company
+                                        Billys Pan Pizza
                                     </div>
-                                    <img src="img/apples-close-up-delicious-209339.jpg" alt="Apple"
-                                        class=" card-img-top">
+                                    <img src="img/billys.png" alt="Billys pan pizza" class=" card-img-top img-fluid">
                                     <div class="card-body">
                                         <h2 class="card-title">Sale!</h2>
                                         <p class="card-text"> Only now! Buy Two Get One Extra!</p>
@@ -146,10 +150,12 @@
                                 </div>
                                 <div class="card">
                                     <div class="card-header text-center">
-                                        Apple Company
+                                        Volt Cola
                                     </div>
-                                    <img src="img/apples-close-up-delicious-209339.jpg" alt="Apple"
-                                        class=" card-img-top">
+                                    <div class=" ">
+                                        <img src="img/Volt-500ml-3D.png" alt="Volt Cola"
+                                            class="card-img-top img-fluid mx-auto d-block" style="width: 30%">
+                                    </div>
                                     <div class="card-body">
                                         <h2 class="card-title">Sale!</h2>
                                         <p class="card-text"> Only now! Buy Two Get One Extra!</p>
@@ -162,10 +168,10 @@
                                 </div>
                                 <div class="card">
                                     <div class="card-header text-center">
-                                        Apple Company
+                                        GATE T-Shirt
                                     </div>
-                                    <img src="img/apples-close-up-delicious-209339.jpg" alt="Apple"
-                                        class=" card-img-top">
+                                    <img src="img/Crew Tröja - Fram.jpg" alt="Tröja"
+                                        class=" card-img-top img-fluid mx-auto d-block" style="width: 100%">
                                     <div class="card-body">
                                         <h2 class="card-title">Sale!</h2>
                                         <p class="card-text"> Only now! Buy Two Get One Extra!</p>
@@ -187,7 +193,6 @@
 
     <!-- TABS -->
 
-
     <div class="container pt-5">
         <div class="card">
             <div class="card-header">
@@ -202,35 +207,59 @@
                         <a class="nav-link" data-toggle="tab" href="#packingList">Packing List</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" data-toggle="tab" href="#secret">Secrets</a>
+                        <a class="nav-link disabled" data-toggle="tab" href="#secret">Secrets
+                            <span class="badge badge-primary">Comming Soon!</span>
+                        </a>
                     </li>
                 </ul>
             </div>
             <div class="card-body">
                 <div class="tab-content">
                     <div id="info" class="container tab-pane active">
-                        <h3 class="card-title">Info</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor
-                            incididunt ut labore et dolore magna aliqua.</p>
+                        <h3 class="card-title display-3">Info</h3>
+
+                        <div class="card-text">
+                            <h4>Vad är GATE?</h4>
+                            <p> GATE står för Gamers at Teknikum
+                                <br>
+                                Grundades 2010 av en kreativa skara elever som ville samla alla spel-intresserade på ett
+                                ställe.
+                                <br>
+                                Vi är ett Utskott här på Teknikum. GATE drivs av EL DATA elever här på Teknikum.
+                                <br>
+                                GATE Förnyas varje år. Det är främst treor men också tvåor som är med och arrangerar.
+                                <br>
+                                GATE går vidare i generation.</p>
+
+                            <h4>Vilka riktar vi oss emot?</h4>
+                            <p>GATE riktar sig till alla.
+                                Tjejer & killar, oavsätt ålder.
+                                Huvudmålet är att fånga in dem som är intresserade av spel och vill umgås socialt
+                                samtidigt.</p>
+                        </div>
                     </div>
                     <div id="rules" class="container tab-pane fade">
-                        <h3 class="card-title">Rules</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor
-                            incididunt ut labore et dolore magna aliqua.</p>
+                        <h3 class="card-title display-3">Rules</h3>
+                        <ol class="card-text">
+                            <li>
+                                <p>There is NO Rules</p>
+                            </li>
+                        </ol>
+
                     </div>
                     <div class="container tab-pane fade" id="packingList">
-                        <h3 class="card-title">Packing List</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor
-                            incididunt ut labore et dolore magna aliqua.</p>
+                        <h3 class="card-title display-3">Packing List</h3>
+                        <ul class="list-group">
+                            <li class="list-group-item"><input type="checkbox"> Happy Smile</li>
+                            <li class="list-group-item"><input type="checkbox"> Food</li>
+                            <li class="list-group-item"><input type="checkbox"> Computer</li>
+                            <li class="list-group-item"><input type="checkbox"> Pillow</li>
+                        </ul>
+
                     </div>
                     <div class="container tab-pane fade" id="secret">
-                        <h3 class="card-title">Secret</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor
-                            incididunt ut labore et dolore magna aliqua.</p>
+                        <h3 class="card-title display-3">Secret</h3>
+                        <p class="card-text"> DISCLAMER! Not actually comming soon.</p>
 
                     </div>
 
@@ -242,33 +271,25 @@
     <!-- CONTACT FORM + IMAGE -->
 
     <section id="contact-form">
-        <div class="container pt-5">
-            <div class="row">
-                <div class="col-md-6">
-                    <form>
-                        <!-- You left here! function for button when sent -->
-                        <div class="alert alert-success alert-dismissible">
-                            <button class="close" type="button" data-dismiss="alert">
-                                <span>&times;</span>
-                            </button>
-                            <strong>Success</strong>
-                            Message Sent
-                        </div>
-
+        <div class="container " style="margin-bottom: 4rem;">
+            <div class="row" style="padding-top: 7rem;">
+                <div class="col-md-7">
+                    <form action="/form-action.html">
                         <h2 class="display-4">Connect with us!</h2>
                         <div class="form-group">
                             <label>Name</label>
-                            <input class="form-control" placeholder="Enter name">
+                            <input type="text" name="name" class="form-control" placeholder="Enter Name">
                         </div>
                         <div class="form-group">
                             <label>Email</label>
-                            <input type="email" class="form-control" placeholder="Enter email">
+                            <input type="email" name="email" class="form-control" placeholder="Enter Email">
                             <small class="form-text text-muted">Your email will not ever be shared with third party
                                 without your concent.</small>
                         </div>
                         <div class="form-group">
                             <label>Message</label>
-                            <textarea class="form-control" id="message" placeholder="Message..."></textarea>
+                            <textarea name="message" class="form-control" id="message"
+                                placeholder="Write Message here..."></textarea>
                         </div>
 
                         <button class="btn btn-success" type="submit" value="submit">Send</button>
@@ -277,7 +298,12 @@
                     </form>
 
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-5 mt-3 mt-md-0">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vtRlnle0kXU"
+                            allowfullscreen></iframe>
+                    </div>
+
 
                 </div>
             </div>
@@ -288,6 +314,25 @@
 
 
     <!-- FOOTER -->
+    <footer id="main-footer" class="fixed-bottom bg-dark text-white p-2">
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="lead text-center">
+                    Copyright <i class="fas fa-copyright"></i>
+                    <span id="year"></span>
+                    GATE
+
+                    <a href="#main-header" class="text-white btn btn-primary">TOP</a>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+
+    <div style="margin-top: 400px"></div>
+
 
     <!-- SCRIPTS -->
     <script src="http://code.jquery.com/jquery-3.4.1.min.js"
